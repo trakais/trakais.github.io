@@ -13,7 +13,11 @@
 	<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
-	<script src="func.js"></script>
+    <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+	<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+
+<!-- routing and spinner, needs PHP <script src="func.js"></script> -->
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -75,11 +79,6 @@
 	    attribution: 'Tiles Courtesy of OSM — ' + '© OpenStreetMap contributors, ' + 'CC-BY-SA'
 	}).addTo(map);
 
-
-	new L.Control.GeoSearch({
-	    provider: new L.GeoSearch.Provider.OpenStreetMap(),
-	    position: 'topcenter'
-	}).addTo(map);
 
 	var hash = new L.Hash(map);
 	var markers = [];
