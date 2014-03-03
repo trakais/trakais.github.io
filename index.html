@@ -117,7 +117,7 @@
 	    filterFeatures(this)
 	});
 	
-	omnivore.csv('https://dl.dropboxusercontent.com/u/363993/CDN/dati.csv'), function (data) {
+	omnivore.csv('https://dl.dropboxusercontent.com/u/363993/CDN/dati.csv', function (data) {
 	    data = csv2geojson.csv2geojson(data);
 	    var geojson = L.geoJson([data], {
 	        onEachFeature: onEachFeature,
