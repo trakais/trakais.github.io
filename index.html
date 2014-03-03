@@ -15,6 +15,7 @@
     <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
     <script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
 	<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+	<script src='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.0.1/leaflet-omnivore.min.js'></script>
 	<script src="func.js"></script>
 
 	<script>
@@ -115,6 +116,28 @@
 	$("a[data-filter]").bind("click", function () {
 	    filterFeatures(this)
 	});
+	
+	omnivore.csv('https://dl.dropboxusercontent.com/u/363993/CDN/dati.csv'), function (data) {
+	    data = csv2geojson.csv2geojson(data);
+	    var geojson = L.geoJson([data], {
+	        onEachFeature: onEachFeature,
+	        pointToLayer: function (feature, latlng) {
+	            return L.marker(latlng, {
+	                icon: L.divIcon({
+	                    className: [feature.properties.statuss],
+	                    html: '<img src="m-' + feature.properties.tips + '.svg"/>',
+	                    iconSize: [28, 28],
+	                    iconAnchor: [12, 24],
+	                    popupAnchor: [0, -24],
+	                    labelAnchor: [20, 0]
+	                })
+	            }).bindLabel(feature.properties.name).addTo(map);
+	        }
+	    });
+	    geojson.addTo(map);
+	});
+	
+/*	
 	$.get("https://dl.dropboxusercontent.com/u/363993/CDN/dati.csv", function (data) {
 	    data = csv2geojson.csv2geojson(data);
 	    var geojson = L.geoJson([data], {
@@ -134,7 +157,7 @@
 	    });
 	    geojson.addTo(map);
 	});
-
+*/
 
 	var geolocate = document.getElementById('geolocate');
 	if (!navigator.geolocation) {
