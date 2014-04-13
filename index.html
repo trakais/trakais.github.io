@@ -78,7 +78,8 @@
 	    attribution: 'Tiles Courtesy of OSM — ' + '© OpenStreetMap contributors, ' + 'CC-BY-SA'
 	}).addTo(map);
 
-
+	new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
+	
 	var hash = new L.Hash(map);
 	var markers = [];
 	var icons = [];
