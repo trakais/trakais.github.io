@@ -61,7 +61,7 @@
 
 
 
-	var map = L.mapbox.map('map', { zoomControl:false }).setView([56.9, 24.5], 9);
+	var map = L.mapbox.map('map', null, { zoomControl:false }).setView([56.9, 24.5], 9);
 	L.TileLayer.multi({
 	    12: {
 	        url: 'http://tiles{s}.api.skobbler.net/tiles/{z}/{x}/{y}.png?api_key=1189b8db552d620e2b1e46fcd2d4edbf',
