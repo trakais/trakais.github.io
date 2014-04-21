@@ -52,8 +52,8 @@ background:#719ead;
 width:24px;
 height:24px;
 border-radius:14px;
-border:1px solid #D1CAAB;
-background-color:#FFF9C6;
+border:1px solid #CCC;
+background-color:#FFF;
 padding:1px;
 }
 
@@ -65,9 +65,9 @@ opacity:0.9;
 .neparbaudits {
 width:24px;
 height:24px;
-opacity:0.7;
+opacity:0.6;
 border-radius:14px;
-border:1px solid #D1CAAB;
+border:1px solid #CCC;
 background-color:#FFF;
 padding:1px;
 }
