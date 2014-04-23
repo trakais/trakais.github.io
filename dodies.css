@@ -52,8 +52,8 @@ background:#719ead;
 width:24px;
 height:24px;
 border-radius:14px;
-border:1px solid #CCC;
-background-color:#FFF;
+border:1px solid #fff;
+background-color:#336600;
 padding:1px;
 }
 
@@ -67,7 +67,7 @@ width:24px;
 height:24px;
 opacity:0.6;
 border-radius:14px;
-border:1px solid #CCC;
+border:1px solid #fff;
 background-color:#336600;
 padding:1px;
 }
