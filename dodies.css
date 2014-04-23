@@ -26,7 +26,7 @@ padding:0;
 }
 
 #map-ui a {
-background:#FFF;
+background:#888;
 color:#3C4E5A;
 display:block;
 border-radius:3px;
@@ -41,7 +41,6 @@ padding:0;
 
 #map-ui a img {
 width:100%;
-fill: #ffa000;
 }
 
 #map-ui a:hover,#map-ui a.active {
