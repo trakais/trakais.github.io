@@ -52,11 +52,11 @@
 	    });
 	});
 
-	var iframe = '';
+	var textbox = '';
 
 	function myFunc(code, a, b) {
-	    txt = '<iframe width="950" height="800" frameborder="0" src="http://www.dodies.lv/#14/' + a + '/' + b + '"></iframe>';
-	    iframe = prompt("Kods ievietošanai citā mājaslapā", txt);
+	    txt = 'N' + a + ', E0' + b + '';
+	    textbox = prompt("GPS koordinātes", txt);
 	}
 
 
@@ -90,7 +90,7 @@
 	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
 	        '<p>' + feature.properties.desc + '</p>' +
 	        '<img class="foto" src="img/' + feature.properties.image + '"/>' +
-	        '<div><em style="font-size: 0.7em;"><a href="/#14/' + feature.geometry.coordinates[1] + '/' + feature.geometry.coordinates[0] + '">' + feature.geometry.coordinates[1] + ', ' + feature.geometry.coordinates[0] + '</a></em><div style="float: right; opacity: 0.4; margin-right: 10px;"><!--<a title="maršrutēt" onClick="layMeAPath(' + feature.geometry.coordinates[1] + ',' + feature.geometry.coordinates[0] + ')" href="#"><img src="action-route.png"/></a>&nbsp;--><img class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa" src="action-euro.png"/><a title="ievietot mājaslapā" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');"><img src="action-code.png"/></a></div></div>';
+	        '<div class="attributes"><div><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'">&#128269;</a></div><div><a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');">&#59172;</a></div><div class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa">&#128179;</div><div class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!">&#128077;</div><div style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</div></div>';
 	    layer.bindPopup(popupContent, {
 	        maxWidth: 320
 	    });

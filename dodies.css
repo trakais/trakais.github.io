@@ -90,19 +90,30 @@ font-family: icons;
 src: url(entypo.woff);
 }
 
+.attributes {
+font-family: icons;
+font-size: 40px;
+color: #3887BE;
+	overflow: auto;
+	width: 100%
+}
+
+.attributes div {
+width: 25px;
+height: 25px;
+float: left;
+margin-right: 2px;
+text-align: center;
+}
+.attributes .standarta {
+display: none;
+}
 .maksas {
 font-family: icons;
 font-size: 40px;
-color: #888;
+color: #3887BE;
 }
 
-/*
-.maksas {
-background:url(http://files.normis.info/dodies/action-euro.png) no-repeat bottom right;
-margin:0;
-padding:0;
-}
-*/
 
 .bezmaksas {
 display:none;
