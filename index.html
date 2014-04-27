@@ -4,17 +4,16 @@
 	<title>Kurp doties pie dabas Latvijā</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
 	<script src='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
 	<link href='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
 	<link rel="stylesheet" type="text/css" href="dodies.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="L.TileLayer.Multi.js"></script>
-	<script type='text/javascript' src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.1/jquery.xdomainrequest.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
     <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
     <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
 	<link href='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+	<script src="L.TileLayer.Multi.js"></script>
 	<script src='csv2geojson.js'></script>
 
 	<script>
@@ -43,6 +42,11 @@
 		</ul>
 	</div>
 <script>
+
+	$(function() {
+    $( document ).tooltip();
+  });
+	
 	$(document).ready(function () {
 	    $('div#thedialog').dialog({
 	        autoOpen: false
@@ -84,7 +88,8 @@
 	var markers = [];
 	var icons = [];
 
-
+	
+	
 	function onEachFeature(feature, layer) {
 	    markers.push(layer);
 	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
@@ -175,5 +180,6 @@ $.get("https://dl.dropboxusercontent.com/u/363993/CDN/dati.csv", function (data)
     <p><a href="https://dl.dropboxusercontent.com/u/363993/CDN/dati.gpx"><img alt="download gpx" src="download.png" style="float: left; margin-right: 5px; margin-bottom: 3px;"/></a>Visus punktus ir iespējams ielādēt arī <a href="https://dl.dropboxusercontent.com/u/363993/CDN/dati.gpx">GPX formātā</a></p>
     <p>Kartes, datu, idejas un lapas autors: <a href="http://normis.info">Normunds Rustanovičs</a>. Lai sazinātos, rakstiet <a href="mailto:normis@normis.info">e-pastu</a>. </p>
 	</div>
+	
 </body>
 </html>
