@@ -70,20 +70,39 @@ border:1px solid #fff;
 background-color:#6D9741;
 padding:1px;
 }
+
 .neparbaudits img {
 width: 90%;
 margin: 1px 0px 0px 1px;
+}
+
+.slikts {
+display: none;
 }
 
 #thedialog {
 font-size:11px;
 }
 
+@font-face
+{
+font-family: icons;
+src: url(entypo.woff);
+}
+
+.maksas {
+font-family: icons;
+font-size: 40px;
+color: #888;
+}
+
+/*
 .maksas {
 background:url(http://files.normis.info/dodies/action-euro.png) no-repeat bottom right;
 margin:0;
 padding:0;
 }
+*/
 
 .bezmaksas {
 display:none;
