@@ -90,7 +90,7 @@
 	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
 	        '<p>' + feature.properties.desc + '</p>' +
 	        '<img class="foto" src="img/' + feature.properties.image + '"/>' +
-	        '<div class="attributes"><div><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'">&#128269;</a></div><div><a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');">&#59172;</a></div><div class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa">&#128179;</div><div class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!">&#128077;</div><div style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</div></div>';
+	        '<div class="attributes"><div><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'">&#128269;</a></div><div><a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');">&#59172;</a></div><div class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa">&#128179;</div><div class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!">&#128077;</div><div title="Maršruta garums" style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</div></div>';
 	    layer.bindPopup(popupContent, {
 	        maxWidth: 320
 	    });
