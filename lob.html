@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kurp doties pie dabas Latvijā</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name=”twitter:site” content=”@dodieslv”>
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" type="text/css" href="dodies.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+	<script src="L.TileLayer.Multi.js"></script>
+	<script src='csv2geojson.js'></script>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48091034-1', 'dodies.lv');
+	  ga('require', 'displayfeatures');
+	  ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<img class="logo" src="img/dodies-alt-s.png" />
+	<div id="map"></div>
+
+<script>
+
+	$(function() {
+    $( document ).tooltip();
+  });
+	
+
+
+	var textbox = '';
+
+	function myFunc(code, a, b) {
+	    txt = 'N' + a + ', E0' + b + '';
+	    textbox = prompt("GPS koordinātes", txt);
+	}
+
+
+
+	var map = L.mapbox.map('map', null, { zoomControl:false }).setView([56.9, 24.5], 9);
+	L.TileLayer.multi({
+	    12: {
+	        url: 'http://tiles{s}.api.skobbler.net/tiles/{z}/{x}/{y}.png?api_key=1189b8db552d620e2b1e46fcd2d4edbf',
+	        subdomains: '1234',
+	        detectRetina: true
+	    },
+	    17: {
+	        url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+	    }
+	}, {
+	    minZoom: 0,
+	    maxZoom: 17,
+	    detectRetina: true,
+	    attribution: 'Tiles Courtesy of OSM — ' + '© OpenStreetMap contributors, ' + 'CC-BY-SA'
+	}).addTo(map);
+
+	new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
+	
+	var hash = new L.Hash(map);
+	var markers = [];
+	var icons = [];
+
+	
+	
+	function onEachFeature(feature, layer) {
+	    markers.push(layer);
+	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
+	        '<p>' + feature.properties.desc + '</p>' +
+	        '<img class="foto" src="img/' + feature.properties.image + '"/>' +
+	        '<div class="attributes"><div><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'">&#128269;</a></div><div><a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');">&#59172;</a></div><div class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa">&#128179;</div><div class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!">&#128077;</div><div title="Maršruta garums" style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</div></div>';
+	    layer.bindPopup(popupContent, {
+	        maxWidth: 320
+	    });
+	}
+
+
+	
+$.get("https://dl.dropboxusercontent.com/u/363993/CDN/lob.csv", function (data) {
+	    data = csv2geojson.csv2geojson(data);
+	    var geojson = L.geoJson([data], {
+	        onEachFeature: onEachFeature,
+	        pointToLayer: function (feature, latlng) {
+	            return L.marker(latlng, {
+	                icon: L.divIcon({
+	                    className: [feature.properties.statuss],
+	                    html: '<img src="m-' + feature.properties.tips + '.svg"/>',
+	                    iconSize: [28, 28],
+	                    iconAnchor: [12, 24],
+	                    popupAnchor: [0, -24],
+	                    labelAnchor: [20, 0]
+	                })
+	            }).bindLabel(feature.properties.name).addTo(map);
+	        }
+	    });
+	    geojson.addTo(map);
+	});
+
+	</script>
+	
+	
+</body>
+</html>
