@@ -5,7 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name=”twitter:site” content=”@dodieslv”>
-	
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" media="screen" href="http://www.devslide.com/public/labs/browser-detection/browser-detection.css" />
 	<script type="text/javascript" src="http://www.devslide.com/public/labs/browser-detection/browser-detection.js">
 	<script type="text/javascript">
@@ -75,8 +75,8 @@
 				</a>
 			</li>
 			
-			<li class='social'><a href="http://twitter.com/dodieslv" title="Twitter" >&#62217;</a></li>
-			<li class='social'><a href="http://facebook.com/dodieslv" style="margin-left: 2px" title="Facebook" >&#62220;</a></li>
+			<li class="social"><a href="http://twitter.com/dodieslv" title="Twitter" ><i class="fa fa-twitter fa-lg"></i></a></li>
+			<li class='social'><a href="http://facebook.com/dodieslv" title="Facebook" ><i class="fa fa-facebook fa-lg"></i></a></li>
 			<li><a href='#' id='thelink' title='Par Dodies.lv'><img alt="help" border="0" src="m-help.svg"/></a></li>
 		</ul>
 	</div>
@@ -134,7 +134,7 @@
 	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
 	        '<p>' + feature.properties.desc + '</p>' +
 	        '<img class="foto" src="img/' + feature.properties.image + '"/>' +
-	        '<div class="attributes"><div><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'">&#128269;</a></div><div><a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');">&#59172;</a></div><div class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa">&#128179;</div><div class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!">&#128077;</div><div title="Maršruta garums" style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</div></div>';
+	        '<div class="attributes"><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'"><i class="fa fa-search-plus fa-lg"></i></a><a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');"><i class="fa fa-map-marker fa-lg"></i></a><span class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa"><i class="fa fa-eur fa-lg"></i></span><span class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!"><i class="fa fa-thumbs-o-up fa-lg"></i></span><span title="Maršruta garums" style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</span></div>';
 	    layer.bindPopup(popupContent, {
 	        maxWidth: 320
 	    });
@@ -212,6 +212,7 @@ $.get("https://dl.dropboxusercontent.com/u/363993/CDN/dati.csv", function (data)
 	</script>
 	
 	<div id="thedialog" style="z-index: 1000;" title="Dodies Latvijā!">
+	
     <p>Šī karte attēlo vietas, kur doties pastaigās pie dabas. Pārgājienu takas, piknika vietas, putnu torņi. Kartē attēlotas visiem pieejamas bezmaksas vietas, ar uzsvaru uz vietām tuvāk dabai.</p>
     <p>Pārsvarā ir iekļautas nekomerciālas vietas, izņemot ja norādīts savādāk. Vietām, kuras esmu apmeklējis pats, ir arī bildes un plašāks apraksts.</p>
     <p>Dati ievākti no dažādiem avotiem: DAP, LVM, pašvaldību mājaslapām. Liela daļa ir pārbaudīta dzīvē, tās kuras vēl nav pārbaudītas, attēlojas blāvāk par pārbaudītajām.</p>

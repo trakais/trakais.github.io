@@ -39,12 +39,17 @@ margin:0 0 1px;
 padding:0;
 }
 
+#map-ui li.social {
+	text-align: center;
+	line-height: 1.4;
+}
+
 #map-ui a img {
 width:100%;
 }
 
-#map-ui a:hover,#map-ui a.active {
-/* background:#719ead; */
+#map-ui a:link, #map-ui a:hover, #map-ui a:active, #map-ui a:visited {
+color: #fff; 
 }
 
 .parbaudits {
@@ -85,6 +90,8 @@ display: none;
 font-size:11px;
 }
 
+
+
 @font-face {
     font-family: 'icons';
     src: url('entypo.eot');
@@ -97,20 +104,13 @@ font-size:11px;
 }
 
 .attributes {
-font-family: icons;
-font-size: 40px;
-color: #3887BE;
-	overflow: auto;
-	width: 100%
+color: #3887BE;	
 }
 
-.attributes div {
-width: 25px;
-height: 30px;
-float: left;
-margin-right: 2px;
-text-align: center;
+.attributes i{
+margin-right: 10px;
 }
+
 .attributes .standarta {
 display: none;
 }
@@ -126,20 +126,9 @@ display: none;
     font-style: normal;
 }
 
-.social, .social a:link, .social a:visited, .social a:active {
-	font-family: icons-social;	
-	font-size: 45px;
-	color: #FFF;
-	line-height: 0.5;
-	padding: 0;
-	margin: 0;
-	text-decoration: none!important;
-}
+
 
 .maksas {
-font-family: icons;
-font-size: 40px;
-color: #3887BE;
 }
 
 .bezmaksas {
