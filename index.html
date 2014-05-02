@@ -156,7 +156,7 @@ $.get("https://dl.dropboxusercontent.com/u/363993/CDN/dati.csv", function (data)
 
 	var geolocate = document.getElementById('geolocate');
 	if (!navigator.geolocation) {
-	    geolocate.innerHTML = 'geolocation is not available';
+	    geolocate.innerHTML = '';
 	} else {
 	    geolocate.onclick = function (e) {
 	        e.preventDefault();
