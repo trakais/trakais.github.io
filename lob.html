@@ -7,7 +7,7 @@
 	<meta name=”twitter:site” content=”@dodieslv”>
 	<script src='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
 	<link href='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
-	<link rel="stylesheet" type="text/css" href="dodies.css">
+	<link rel="stylesheet" type="text/css" href="lob.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
@@ -93,7 +93,7 @@ $.get("https://dl.dropboxusercontent.com/u/363993/CDN/lob.csv", function (data) 
 	        pointToLayer: function (feature, latlng) {
 	            return L.marker(latlng, {
 	                icon: L.divIcon({
-	                    className: [feature.properties.statuss],
+	                    className: [feature.properties.krasa],
 	                    html: '<img src="m-' + feature.properties.tips + '.svg"/>',
 	                    iconSize: [28, 28],
 	                    iconAnchor: [12, 24],
