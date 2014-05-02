@@ -126,7 +126,7 @@ display: none;
     font-style: normal;
 }
 
-.social {
+.social, .social a:link, .social a:visited, .social a:active {
 	font-family: icons-social;	
 	font-size: 45px;
 	color: #FFF;
