@@ -39,7 +39,15 @@
 			<li><a href='#' title="Velo" data-filter="velo"><img  alt="velo" border="0" src="m-velo.svg"/></a></li>
 			<li style="margin-bottom: 20px;"><a href='#' title="Visi" class='active' data-filter=""><img alt="visi" border="0" src="m-visi.svg"/></a></li>
 
-			<li><a href="#" title="Kur es esmu?" id="geolocate"><img alt="GPS" border="0" src="m-gps.svg"/></a></li>
+			<li><a href="#" title="Kur es esmu?" id="geolocate">
+			<svg width="143" height="27">  
+			<!--[if (lte IE 8)|(!IE)]>
+			  <style>.svg {display: none;}</style>
+			  <image src="m-gps.svg.png"  width="24" height="24" />
+			  <![endif]-->
+			  <image class="svg" xlink:href="m-gps.svg"  width="24" height="24" />	
+			</svg>
+			</a></li>
 			<li><a href="http://twitter.com/dodieslv" title="Twitter" class='social'>&#62217;</a></li>
 			<li><a href="http://facebook.com/dodieslv" style="margin-left: 2px" title="Facebook" class='social'>&#62220;</a></li>
 			<li><a href='#' id='thelink' title='Par Dodies.lv'><img alt="help" border="0" src="m-help.svg"/></a></li>
