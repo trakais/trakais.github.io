@@ -25,9 +25,9 @@ margin:0;
 padding:0;
 }
 
-#map-ui a {
+#map-ui li {
 background:#888;
-color:#3C4E5A;
+color:#FFF;
 display:block;
 border-radius:3px;
 border:1px solid #888;
@@ -44,7 +44,7 @@ width:100%;
 }
 
 #map-ui a:hover,#map-ui a.active {
-background:#719ead;
+/* background:#719ead; */
 }
 
 .parbaudits {
@@ -108,6 +108,22 @@ text-align: center;
 }
 .attributes .standarta {
 display: none;
+}
+
+@font-face
+{
+font-family: icons-social;
+src: url(entypo-social.woff);
+}
+
+.social {
+	font-family: icons-social;	
+	font-size: 45px;
+	color: #FFF;
+	line-height: 0.5;
+	padding: 0;
+	margin: 0;
+	text-decoration: none!important;
 }
 
 .maksas {
