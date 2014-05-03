@@ -102,7 +102,7 @@
 	        '<a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');"><i class="fa fa-map-marker fa-lg"></i></a>' +
 	        '<span class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa"><i class="fa fa-eur fa-lg"></i></span>' + 
 	        '<span class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!"><i class="fa fa-thumbs-o-up fa-lg"></i></span>' +
-	        '<i class="fa fa-square fa-lg '+ feature.properties.grutiba +'" title="Grūtības līmenis"></i>' +
+	        '<i class="fa fa-square fa-lg '+ feature.properties.klase +'" title="Grūtības līmenis"></i>' +
 	        '<span title="Maršruta garums" style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</span></div>';
 	    layer.bindPopup(popupContent, {
 	        maxWidth: 320
