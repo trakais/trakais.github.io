@@ -90,8 +90,6 @@ display: none;
 font-size:11px;
 }
 
-
-
 @font-face {
     font-family: 'icons';
     src: url('entypo.eot');
@@ -126,8 +124,6 @@ display: none;
     font-style: normal;
 }
 
-
-
 .maksas {
 }
 
@@ -141,6 +137,18 @@ position:absolute;
 top:90px;
 left:10px;
 z-index:100;
+}
+
+.viegli {
+color: #00FF00;
+}
+
+.videji {
+color: #0000FF;
+}
+
+.gruti {
+color: #FF0000;
 }
 
 .logo {

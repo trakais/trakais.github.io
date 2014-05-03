@@ -98,7 +98,12 @@
 	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
 	        '<p>' + feature.properties.desc + '</p>' +
 	        '<img class="foto" src="img/' + feature.properties.image + '"/>' +
-	        '<div class="attributes"><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'"><i class="fa fa-search-plus fa-lg"></i></a><a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');"><i class="fa fa-map-marker fa-lg"></i></a><span class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa"><i class="fa fa-eur fa-lg"></i></span><span class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!"><i class="fa fa-thumbs-o-up fa-lg"></i></span><span title="Maršruta garums" style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</span></div>';
+	        '<div class="attributes"><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'"><i class="fa fa-search-plus fa-lg"></i></a>' +
+	        '<a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');"><i class="fa fa-map-marker fa-lg"></i></a>' +
+	        '<span class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa"><i class="fa fa-eur fa-lg"></i></span>' + 
+	        '<span class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!"><i class="fa fa-thumbs-o-up fa-lg"></i></span>' +
+	        '<span title="Maršruta garums" style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</span></div>' +
+	        '<i class="fa fa-square fa-lg'+ feature.properties.grutiba +'" title="Grūtības līmenis"></i>';
 	    layer.bindPopup(popupContent, {
 	        maxWidth: 320
 	    });
