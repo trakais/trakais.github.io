@@ -125,7 +125,7 @@
 	    filterFeatures(this)
 	});
 	
-$.get("http://dl.dropboxusercontent.com/u/363993/CDN/dati.csv", function (data) {
+$.get("dati.csv", function (data) {
 	    data = csv2geojson.csv2geojson(data);
 	    var geojson = L.geoJson([data], {
 	        onEachFeature: onEachFeature,
