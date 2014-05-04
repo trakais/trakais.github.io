@@ -26,10 +26,20 @@
 	  ga('require', 'displayfeatures');
 	  ga('send', 'pageview');
 	</script>
+	<style type="text/css">
+	#search {
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:150%;
+	}
+	</style>
 </head>
 <body>
 	<img class="logo" src="img/dodies-alt-s.png" />
 	<div id="map"></div>
+	<input placeholder='state abbreviation' id='search' />
+
 	<div id='map-ui'>
 		<ul>
 			<li><a href='#' title="Takas" data-filter="taka"><img alt="takas" border="0" src="m-taka.svg"/></a></li>
@@ -91,7 +101,8 @@
 	var markers = [];
 	var icons = [];
 
-	
+	$('#search').keyup(search);
+
 	
 	function onEachFeature(feature, layer) {
 	    markers.push(layer);
@@ -108,6 +119,22 @@
 	        maxWidth: 320
 	    });
 	}
+	
+	
+	function search() {
+    // get the value of the search input field
+    var searchString = $('#search').val().toLowerCase();
+
+    featureLayer.setFilter(showState);
+
+    // here we're simply comparing the 'state' property of each marker
+    // to the search string, seeing whether the former contains the latter.
+    function showState(feature) {
+        return feature.properties.name
+            .toLowerCase()
+            .indexOf(searchString) !== -1;
+    }
+}
 
 	function filterFeatures(obj) {
 	    $('a[data-filter]').each(function () {
@@ -178,6 +205,9 @@ $.get("dati.csv", function (data) {
 	map.on('locationerror', function () {
 	    geolocate.innerHTML = '';
 	});
+	
+
+
 	//]]>
 	</script>
 	
