@@ -98,7 +98,7 @@ height:24px;
 opacity:0.7;
 border-radius:14px;
 border:1px solid #fff;
-background-color:#0000ff;
+background-color:#808080;
 padding:1px;
 }
 
@@ -323,3 +323,46 @@ width:200px;
 font-size: 12px!important;
 
 }
+.map-legends {
+max-width:200px!important;
+width: 200px;
+}
+    .my-legend .legend-title {
+      text-align: left;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 90%;
+      }
+    .my-legend .legend-scale ul {
+      margin: 0;
+      padding: 0;
+      float: left;
+      list-style: none;
+      }
+    .my-legend .legend-scale ul li {
+      display: block;
+
+      width: 50px;
+      margin-bottom: 6px;
+      text-align: left;
+      font-size: 80%;
+      list-style: none;
+      }
+      
+      .my-legend ul.legend-labels li {
+      width: 200px;
+      }
+    .my-legend ul.legend-labels li span {
+      display: block;
+      float: left;
+      height: 15px;
+      width: 30px;
+      }
+    .my-legend .legend-source {
+      font-size: 70%;
+      color: #999;
+      clear: both;
+      }
+    .my-legend a {
+      color: #777;
+      }

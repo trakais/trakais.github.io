@@ -31,6 +31,21 @@
 <body>
 	<img class="logo" src="img/dodies-alt-s.png" />
 	<div id="map"></div>
+	
+	<div id='legend-content' style='display: none;'>
+	  <div class='my-legend'>
+	  <div class='legend-title'>Torņu krāsu atšifrējums</div>
+	  <div class='legend-scale'>
+    <ul class='legend-labels'>
+      <li><span style='background:#ff0000; margin-top: 4px;'></span>&nbsp; TC pieredzējušo tornis</li>
+      <li><span style='background:#0000ff; margin-top: 4px;'></span>&nbsp; TC Tautas klases tornis</li>
+      <li><span style='background:#6D9741; margin-top: 4px;'></span>&nbsp; TC brīvās klases tornis</li>
+      <li><span style='background:#808080; margin-top: 4px;'></span>&nbsp; TC vēsturiskais tornis</li>
+      
+    </ul>
+  </div>
+  </div>
+  
 
 <script>
 
@@ -50,6 +65,8 @@
 
 
 	var map = L.mapbox.map('map', null, { zoomControl:false }).setView([56.9, 24.5], 9);
+	  	map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
+
 	L.TileLayer.multi({
 	    12: {
 	        url: 'http://tiles{s}.api.skobbler.net/tiles/{z}/{x}/{y}.png?api_key=1189b8db552d620e2b1e46fcd2d4edbf',
