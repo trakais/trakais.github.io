@@ -86,7 +86,7 @@
 
 
 	
-$.get("https://dl.dropboxusercontent.com/u/363993/CDN/lob.csv", function (data) {
+$.get("https://dl.dropboxusercontent.com/u/363993/CDN/lob2.csv", function (data) {
 	    data = csv2geojson.csv2geojson(data);
 	    var geojson = L.geoJson([data], {
 	        onEachFeature: onEachFeature,
