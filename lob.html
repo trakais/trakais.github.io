@@ -5,6 +5,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name=”twitter:site” content=”@dodieslv”>
+	<link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel="stylesheet" />
 	<script src='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
 	<link href='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
 	<link rel="stylesheet" type="text/css" href="lob.css">
@@ -71,9 +72,19 @@
 	var markers = [];
 	var icons = [];
 
+		function onEachFeature(feature, layer) {
+	    markers.push(layer);
+	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
+	        '<p>' + feature.properties.desc + '</p>' +
+	        '<img class="foto" src="img/' + feature.properties.image + '"/>' +
+	        '<div class="attributes"><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'"><i class="fa fa-search-plus fa-lg"></i></a>' +
+	        '<a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');"><i class="fa fa-map-marker fa-lg"></i></a></div>';
+	    layer.bindPopup(popupContent, {
+	        maxWidth: 320
+	    });
+	}
 	
-	
-	function onEachFeature(feature, layer) {
+/* 	function onEachFeature(feature, layer) {
 	    markers.push(layer);
 	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
 	        '<p>' + feature.properties.desc + '</p>' +
@@ -83,7 +94,7 @@
 	        maxWidth: 320
 	    });
 	}
-
+*/
 
 	
 $.get("https://dl.dropboxusercontent.com/u/363993/CDN/lob2.csv", function (data) {

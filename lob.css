@@ -126,23 +126,17 @@ font-size:11px;
 }
 
 .attributes {
-font-family: icons;
-font-size: 40px;
-color: #3887BE;
-	overflow: auto;
-	width: 100%
+color: #3887BE;	
 }
 
-.attributes div {
-width: 25px;
-height: 30px;
-float: left;
-margin-right: 2px;
-text-align: center;
+.attributes i{
+margin-right: 10px;
 }
+
 .attributes .standarta {
 display: none;
 }
+
 
 @font-face {
     font-family: 'icons-social';
