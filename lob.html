@@ -94,7 +94,7 @@
 	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
 	        '<p>' + feature.properties.desc + '</p>' +
 	        '<img class="foto" src="img/' + feature.properties.image + '"/>' +
-	        '<div class="attributes"><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'"><i class="fa fa-search-plus fa-lg"></i></a>' +
+	        '<div class="attributes"><a title="Tuvināt" href="lob.html/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'"><i class="fa fa-search-plus fa-lg"></i></a>' +
 	        '<a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');"><i class="fa fa-map-marker fa-lg"></i></a></div>';
 	    layer.bindPopup(popupContent, {
 	        maxWidth: 320
