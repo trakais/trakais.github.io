@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kurp doties pie dabas Latvijā</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name=”twitter:site” content=”@dodieslv”>
+	<link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel="stylesheet" />
+	<script src='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+	<link rel="stylesheet" type="text/css" href="dodies.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-hash/v0.2.1/leaflet-hash.js'></script>
+    <script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
+	<link href='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.css' rel='stylesheet' />
+	<script src="L.TileLayer.Multi.js"></script>
+	<script src='csv2geojson.js'></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-48091034-1', 'dodies.lv');
+	  ga('require', 'displayfeatures');
+	  ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<img class="logo" src="img/dodies-alt-s.png" />
+	<div id="map"></div>
+	<input placeholder='state abbreviation' id='search' />
+
+	<div id='map-ui'>
+		<ul>
+			<li><a href='#' title="Takas" data-filter="taka"><img alt="takas" border="0" src="m-taka.svg"/></a></li>
+			<li><a href='#' title="Torņi" data-filter="tornis"><img  alt="torņi" border="0" src="m-tornis.svg"/></a></li>
+			<li><a href='#' title="Piknika vietas" data-filter="pikniks"><img  alt="pikniks" border="0" src="m-pikniks.svg"/></a></li>
+			<li><a href='#' title="Parki" data-filter="parks"><img  alt="parki" border="0" src="m-parks.svg"/></a></li>
+			<li><a href='#' title="Velo" data-filter="velo"><img  alt="velo" border="0" src="m-velo.svg"/></a></li>
+			<li style="margin-bottom: 20px;"><a href='#' title="Visi" class='active' data-filter=""><img alt="visi" border="0" src="m-visi.svg"/></a></li>
+			<li><a href="#" title="Kur es esmu?" id="geolocate"><img  alt="velo" border="0" src="m-gps.svg" /></a></li>
+			<li class="social"><a href="http://twitter.com/dodieslv" title="Twitter" ><i class="fa fa-twitter fa-lg"></i></a></li>
+			<li class='social'><a href="http://facebook.com/dodieslv" title="Facebook" ><i class="fa fa-facebook fa-lg"></i></a></li>
+			<li><a href='#' id='thelink' title='Par Dodies.lv'><img alt="help" border="0" src="m-help.svg"/></a></li>
+		</ul>
+	</div>
+<script>
+//<![CDATA[
+	$(function() {
+    $( document ).tooltip();
+  });
+	
+	$(document).ready(function () {
+	    $('div#thedialog').dialog({
+	        autoOpen: false
+	    })
+	    $('#thelink').click(function () {
+	        $('div#thedialog').dialog('open');
+	    });
+	});
+
+	var textbox = '';
+
+	function myFunc(code, a, b) {
+	    txt = 'N' + a + ', E0' + b + '';
+	    textbox = prompt("GPS koordinātes", txt);
+	}
+
+
+
+	var map = L.mapbox.map('map', null, { zoomControl:false }).setView([56.9, 24.5], 9);
+	L.TileLayer.multi({
+	    12: {
+	        url: 'http://tiles{s}.api.skobbler.net/tiles/{z}/{x}/{y}.png?api_key=1189b8db552d620e2b1e46fcd2d4edbf',
+	        subdomains: '1234',
+	        detectRetina: true
+	    },
+	    17: {
+	        url: 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+	    }
+	}, {
+	    minZoom: 0,
+	    maxZoom: 17,
+	    detectRetina: true,
+	    attribution: 'Tiles Courtesy of OSM — ' + '© OpenStreetMap contributors, ' + 'CC-BY-SA'
+	}).addTo(map);
+
+	new L.Control.Zoom({ position: 'bottomleft' }).addTo(map);
+	
+	var hash = new L.Hash(map);
+	var markers = [];
+	var icons = [];
+	
+	function onEachFeature(feature, layer) {
+	    markers.push(layer);
+	    var popupContent = '<div><b>' + feature.properties.name + '</b><br/>' +
+	        '<p>' + feature.properties.desc + '</p>' +
+	        '<img class="foto" src="img/' + feature.properties.image + '"/>' +
+	        '<div class="attributes"><a title="Tuvināt" href="/#14/'+ feature.geometry.coordinates[1] +'/' + feature.geometry.coordinates[0] +'"><i class="fa fa-search-plus fa-lg"></i></a>' +
+	        '<a title="GPS koordinātes" href="#" onclick="myFunc(\'code\',\'' + feature.geometry.coordinates[1] + '\',\'' + feature.geometry.coordinates[0] + '\');"><i class="fa fa-map-marker fa-lg"></i></a>' +
+	        '<span class="' + feature.properties.samaksa + '" alt="Samaksa" title="Samaksa"><i class="fa fa-eur fa-lg"></i></span>' + 
+	        '<span class="' + feature.properties.vertejums + '" alt="Rekomendēts!" title="Rekomendēts!"><i class="fa fa-thumbs-o-up fa-lg"></i></span>' +
+	        '<i class="fa fa-square fa-lg '+ feature.properties.klase +'" title="Grūtības līmenis"></i>' +
+	        '<span title="Maršruta garums" style="font-size: 15px; margin-top: 3px">' + feature.properties.garums + '</span></div>';
+	    layer.bindPopup(popupContent, {
+	        maxWidth: 320
+	    });
+	}
+	
+	function filterFeatures(obj) {
+	    $('a[data-filter]').each(function () {
+	        $(this).removeClass('active');
+	    });
+	    $(obj).addClass('active');
+	    type = $(obj).attr('data-filter');
+
+	    for (var i = 0; i < markers.length; i++) {
+	        if (markers[i].feature.properties.tips == type || type == '') {
+	            map.addLayer(markers[i]);
+	        } else {
+	            map.removeLayer(markers[i]);
+	        }
+	    }
+	    return (false);
+	}
+
+	$("a[data-filter]").bind("click", function () {
+	    filterFeatures(this)
+	});
+	
+$.get("dati.csv", function (data) {
+	    data = csv2geojson.csv2geojson(data);
+	    var geojson = L.geoJson([data], {
+	        onEachFeature: onEachFeature,
+	        pointToLayer: function (feature, latlng) {
+	            return L.marker(latlng, {
+	                icon: L.divIcon({
+	                    className: [feature.properties.statuss],
+	                    html: '<img src="m-' + feature.properties.tips + '.svg"/>',
+	                    iconSize: [28, 28],
+	                    iconAnchor: [12, 24],
+	                    popupAnchor: [0, -24],
+	                    labelAnchor: [20, 0]
+	                })
+	            }).bindLabel(feature.properties.name).addTo(map);
+	        }
+	    });
+	    geojson.addTo(map);
+	});
+
+	var geolocate = document.getElementById('geolocate');
+	if (!navigator.geolocation) {
+	    geolocate.innerHTML = '';
+	} else {
+	    geolocate.onclick = function (e) {
+	        e.preventDefault();
+	        e.stopPropagation();
+	        map.locate();
+	    };
+	}
+	map.on('locationfound', function (e) {
+	    map.setView([e.latlng.lat, e.latlng.lng], 13);
+
+	    map.markerLayer.setGeoJSON({
+	        type: "Feature",
+	        geometry: {
+	            type: "Point",
+	            coordinates: [e.latlng.lng, e.latlng.lat]
+	        },
+	        properties: {
+	            'm-color': '#000',
+	            'm-symbol': 'star-stroked'
+	        }
+	    });
+	});
+	map.on('locationerror', function () {
+	    geolocate.innerHTML = '';
+	});
+	
+
+
+	//]]>
+	</script>
+	
+	<div id="thedialog" style="z-index: 1000;" title="Dodies Latvijā!">
+	
+    <p>Šī karte attēlo vietas, kur doties pastaigās pie dabas. Pārgājienu takas, piknika vietas, putnu torņi. Kartē attēlotas visiem pieejamas bezmaksas vietas, ar uzsvaru uz vietām tuvāk dabai.</p>
+    <p>Pārsvarā ir iekļautas nekomerciālas vietas, izņemot ja norādīts savādāk. Vietām, kuras esmu apmeklējis pats, ir arī bildes un plašāks apraksts.</p>
+    <p>Dati ievākti no dažādiem avotiem: DAP, LVM, pašvaldību mājaslapām. Liela daļa ir pārbaudīta dzīvē, tās kuras vēl nav pārbaudītas, attēlojas blāvāk par pārbaudītajām.</p>
+    <p>Šī karte vienmēr būs bezmaksas, un nesaturēs reklāmas.</p>
+    <p><a href="https://dl.dropboxusercontent.com/u/363993/CDN/dati.gpx"><img alt="download gpx" src="download.png" style="float: left; margin-right: 5px; margin-bottom: 3px;"/></a>Visus punktus ir iespējams ielādēt arī <a href="https://dl.dropboxusercontent.com/u/363993/CDN/dati.gpx">GPX formātā</a></p>
+    <p>Kartes, datu, idejas un lapas autors: <a href="http://normis.info">Normunds Rustanovičs</a>. Lai sazinātos, rakstiet <a href="mailto:normis@normis.info">e-pastu</a>, vai sekojiet mums <a href="https://twitter.com/dodieslv">Twitter</a> un <a href="https://www.facebook.com/dodieslv">Facebook</a></p>
+	</div>
+	
+</body>
+</html>
