@@ -130,7 +130,7 @@
 	    filterFeatures(this)
 	});
 	
-$.get("dati.csv", function (data) {
+$.get("https://www.dropbox.com/s/742enob95kee5bk/dati.csv", function (data) {
 	    data = csv2geojson.csv2geojson(data);
 	    var geojson = L.geoJson([data], {
 	        onEachFeature: onEachFeature,
