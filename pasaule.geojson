@@ -1,0 +1,2037 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buenos Aires",
+        "country": "Argentina",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.381559,
+          -34.603684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rosario",
+        "country": "Argentina",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -60.6665,
+          -32.950741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brisbane",
+        "country": "Australia",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          153.023449,
+          -27.471011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vienna",
+        "country": "Austria",
+        "how": "divi",
+        "notes": "Auto ceļojums pa rietumeiropu 2007. gadā"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.373819,
+          48.208174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bruges",
+        "country": "Belgium",
+        "how": "tris",
+        "notes": "Benelux autobrauciens trijatā ar vieglo auto, 2010. gads. "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.2247,
+          51.209348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ghent",
+        "country": "Belgium",
+        "how": "tris",
+        "notes": "Benelux autobrauciens trijatā ar vieglo auto, 2010. gads. "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.717424,
+          51.054342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Natal",
+        "country": "Brazil",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -35.200916,
+          -5.779257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salvador",
+        "country": "Brazil",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -38.501414,
+          -12.972218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sao Paulo",
+        "country": "Brazil",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.633309,
+          -23.55052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sofia",
+        "country": "Bulgaria",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.321868,
+          42.697708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Phnom Penh",
+        "country": "Cambodia",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Vjetnamu un Kambodžu 2014. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.892167,
+          11.544873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siem Reap",
+        "country": "Cambodia",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Vjetnamu un Kambodžu 2014. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.100133,
+          13.691538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beijing",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu 2011. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          116.407395,
+          39.904211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guangzhou",
+        "country": "China",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          113.264385,
+          23.12911
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hong Kong",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu 2011. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.109497,
+          22.396428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shenzhen",
+        "country": "China",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.057868,
+          22.543099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Xi'An",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu 2011. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.940175,
+          34.341568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bogota",
+        "country": "Colombia",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.075833,
+          4.598056
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zagreb",
+        "country": "Croatia",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.981919,
+          45.815011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Prague",
+        "country": "Czech Republic",
+        "how": "tris",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.4378,
+          50.075538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cairo",
+        "country": "Egypt",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          31.235712,
+          30.04442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sharm El Sheikh",
+        "country": "Egypt",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          34.32995,
+          27.915817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tallin",
+        "country": "Estonia",
+        "how": "tris",
+        "notes": "Daudz reižu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.753575,
+          59.436961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Helsinki",
+        "country": "Finland",
+        "how": "tris",
+        "notes": "Pa ceļam, brauciens uz īnu, ar uzkavēšanos HelsinkosĶ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.941025,
+          60.173324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tampere",
+        "country": "Finland",
+        "how": "divi",
+        "notes": "Geocaching MEGA pasākums 2011."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.761025,
+          61.498151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Paris",
+        "country": "France",
+        "how": "divi",
+        "notes": "Nedēļas nogales brauciens 2014. gada maijā, divatā, palikām AirBnB. Apraksts <a href='http://www.normis.info/travel/2014/5/22/parize'>blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.352222,
+          48.856614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strasbourg",
+        "country": "France",
+        "how": "divi",
+        "notes": "Kempera brauciens 2009. <a href=https://blog.dodies.lv/2009/06/20090629celo-ar-kemperi-pa-eiropu/>Blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.752111,
+          48.573405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berlin",
+        "country": "Germany",
+        "how": "tris",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.404954,
+          52.520007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hannover",
+        "country": "Germany",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.73201,
+          52.375892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich",
+        "country": "Germany",
+        "how": "divi",
+        "notes": "Kempera brauciens"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.581981,
+          48.135125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nuremberg",
+        "country": "Germany",
+        "how": "divi",
+        "notes": "Kempera brauciens"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.07675,
+          49.45203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salzburg",
+        "country": "Germany",
+        "how": "divi",
+        "notes": "Kempera brauciens"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.05501,
+          47.80949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gibraltar",
+        "country": "Gibraltar",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Maroku 2013. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.353585,
+          36.140751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Budapest",
+        "country": "Hungary",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.040235,
+          47.497912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Osijek",
+        "country": "Hungary",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.695514,
+          45.554962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pecs",
+        "country": "Hungary",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.232266,
+          46.072735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mumbai",
+        "country": "India",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          72.877656,
+          19.075984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bali",
+        "country": "Indonesia",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.21637,
+          -8.68913
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bandung",
+        "country": "Indonesia",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.608242,
+          -6.914864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jakarta",
+        "country": "Indonesia",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.845599,
+          -6.208763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yogyakarta",
+        "country": "Indonesia",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.370527,
+          -7.797068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Venice",
+        "country": "Italy",
+        "how": "tris",
+        "notes": "Brauciens no Bergamo uz Venēciju trijatā ar AirBnB, Jūnijs 2012. Otra reize viens pats ar darbu 2013."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.315515,
+          45.440847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matsumoto",
+        "country": "Japan",
+        "how": "tris",
+        "notes": "Ceļojums trijatā pa Japānu ar vilcieniem 2013. gada aprīlī. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          137.972034,
+          36.238038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Osaka",
+        "country": "Japan",
+        "how": "tris",
+        "notes": "Ceļojums trijatā pa Japānu ar vilcieniem 2013. gada aprīlī. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          135.502165,
+          34.693738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tokyo",
+        "country": "Japan",
+        "how": "tris",
+        "notes": "Ceļojums trijatā pa Japānu ar vilcieniem 2013. gada aprīlī. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.691706,
+          35.689487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Louang Namtha",
+        "country": "Laos",
+        "how": "divi",
+        "notes": "Ceļojums divatā uz Taizemi un Laosu 2008. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.4,
+          20.95
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Louangphrabang",
+        "country": "Laos",
+        "how": "divi",
+        "notes": "Ceļojums divatā uz Taizemi un Laosu 2008. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.134687,
+          19.883396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vientiane",
+        "country": "Laos",
+        "how": "divi",
+        "notes": "Ceļojums divatā uz Taizemi un Laosu 2008. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.6,
+          17.966667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riga",
+        "country": "Latvia",
+        "how": "tris",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.105186,
+          56.949649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vilnius",
+        "country": "Lithuania",
+        "how": "tris",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          25.279651,
+          54.687156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guadalajara",
+        "country": "Mexico",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -103.349609,
+          20.659699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mexico City",
+        "country": "Mexico",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.133208,
+          19.432608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Er Rachidia",
+        "country": "Morocco",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Maroku 2013. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.424444,
+          31.931944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Faro",
+        "country": "Portugal",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Maroku 2013. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.93044,
+          37.019355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fez",
+        "country": "Morocco",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Maroku 2013. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5,
+          34.033333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marrakesh",
+        "country": "Morocco",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Maroku 2013. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.008889,
+          31.63
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amsterdam",
+        "country": "Netherlands",
+        "how": "tris",
+        "notes": "Benelux autobrauciens trijatā ar vieglo auto, 2010. gads. "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.895168,
+          52.370216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abuja",
+        "country": "Nigeria",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.483333,
+          9.066667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lima",
+        "country": "Peru",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.042793,
+          -12.046374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manila",
+        "country": "Philippines",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          120.975738,
+          14.6002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krakow",
+        "country": "Poland",
+        "how": "divi",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.94498,
+          50.06465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Warsaw",
+        "country": "Poland",
+        "how": "divi",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.012229,
+          52.229676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wroclaw",
+        "country": "Poland",
+        "how": "divi",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.038538,
+          51.107885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bucuresti",
+        "country": "Romania",
+        "how": "viens",
+        "notes": "Darba komandējums"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.102538,
+          44.426767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baia Mare",
+        "country": "Romania",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.576701,
+          47.64528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sighetu Marmației",
+        "country": "Romania",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.891629,
+          47.926483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Resita",
+        "country": "Romania",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.901576,
+          45.285823
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sibiu",
+        "country": "Romania",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.152069,
+          45.792784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Marino",
+        "country": "San Marino",
+        "how": "viens",
+        "notes": "<a href='http://pasaule.dodies.lv'>Interesants brauciens brīvajā laikā pēc komandējuma</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.457777,
+          43.94236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Belgrade",
+        "country": "Serbia",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.448922,
+          44.786568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Novy Sad",
+        "country": "Serbia",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.83355,
+          45.267135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Singapore",
+        "country": "Singapore",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.83831,
+          1.271627
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bratislava",
+        "country": "Slovakia",
+        "how": "divi",
+        "notes": "Pirmais Eirobrauciens ar Defender, 2008. gada Augusts"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.107137,
+          48.145892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sevilla",
+        "country": "Spain",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Maroku 2013. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.984459,
+          37.389092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nykoping",
+        "country": "Sweden",
+        "how": "divi",
+        "notes": "Ryanair brauciens pēc Geocaching slēpņiem"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.009159,
+          58.752844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stockholm",
+        "country": "Sweden",
+        "how": "tris",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.068581,
+          59.329323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zurich",
+        "country": "Switzerland",
+        "how": "divi",
+        "notes": "Kempera brauciens"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.539183,
+          47.36865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bangkok",
+        "country": "Thailand",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Vjetnamu un Kambodžu 2014. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.524123,
+          13.727896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chang Mai",
+        "country": "Thailand",
+        "how": "divi",
+        "notes": "Ceļojums divatā uz Taizemi un Laosu 2008. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.981716,
+          18.706064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chang Rai",
+        "country": "Thailand",
+        "how": "divi",
+        "notes": "Ceļojums divatā uz Taizemi un Laosu 2008. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.830955,
+          19.907166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Istanbul",
+        "country": "Turkey",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.97696,
+          41.00527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "London",
+        "country": "UK",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.127758,
+          51.507351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lviv",
+        "country": "Ukraine",
+        "how": "tris",
+        "notes": "Ceļojums trijatā ar teltīm kempingos 2012. gada Jūlijā. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.029717,
+          49.839683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chicago",
+        "country": "USA",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.629798,
+          41.878114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dallas",
+        "country": "USA",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -96.800978,
+          32.780262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ft. Worth",
+        "country": "USA",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.330766,
+          32.755488
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Las Vegas",
+        "country": "USA",
+        "how": "tris",
+        "notes": "ASV 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -115.13983,
+          36.169941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Orleans",
+        "country": "USA",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.071532,
+          29.951066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Orlando",
+        "country": "USA",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.379236,
+          28.538335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pittsburgh",
+        "country": "USA",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.995886,
+          40.440625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "St. Louis",
+        "country": "USA",
+        "how": "viens",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.199404,
+          38.627003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hanoi",
+        "country": "Vietnam",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Vjetnamu un Kambodžu 2014. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          105.83416,
+          21.027764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ho Chi Minh",
+        "country": "Vietnam",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Vjetnamu un Kambodžu 2014. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.629664,
+          10.823099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hoi An",
+        "country": "Vietnam",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Vjetnamu un Kambodžu 2014. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          108.338047,
+          15.880058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hue",
+        "country": "Vietnam",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Vjetnamu un Kambodžu 2014. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.56235,
+          16.4498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Verona",
+        "country": "Italy",
+        "how": "tris",
+        "notes": "Brauciens no Bergamo uz Venēciju trijatā ar AirBnB, Jūnijs 2012."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.991622,
+          45.438384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergamo",
+        "country": "Italy",
+        "how": "tris",
+        "notes": "Brauciens no Bergamo uz Venēciju trijatā ar AirBnB, Jūnijs 2012."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.67727,
+          45.698264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Francisco",
+        "country": "USA",
+        "how": "tris",
+        "notes": "ASV 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.41941550000001,
+          37.7749295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Los Angeles",
+        "country": "USA",
+        "how": "tris",
+        "notes": "ASV 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -118.2436849,
+          34.0522342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Monterey",
+        "country": "USA",
+        "how": "tris",
+        "notes": "ASV 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.89467609999997,
+          36.6002378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anaheim",
+        "country": "USA",
+        "how": "tris",
+        "notes": "ASV 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -117.91450359999999,
+          33.8352932
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guayaquil",
+        "country": "Ecuador",
+        "how": "viens",
+        "notes": "MUM South America 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.883333,
+          -2.183333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yangon",
+        "country": "Myanmar",
+        "how": "viens",
+        "notes": "MUM Myanmar 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          96.14951,
+          16.798358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kinpun",
+        "country": "Myanmar",
+        "how": "viens",
+        "notes": "MUM Myanmar 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          97.077695,
+          17.400043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quebec",
+        "country": "Canada",
+        "how": "viens",
+        "notes": "MUM Canada 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -71.147721,
+          46.890733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Montreal",
+        "country": "Canada",
+        "how": "viens",
+        "notes": "MUM Canada 2015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.577219,
+          45.50132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Athens",
+        "country": "Greece",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Grieķiju, 2015. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.732454,
+          37.971724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Delphi",
+        "country": "Greece",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Grieķiju, 2015. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.500753,
+          38.482417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Havana",
+        "country": "Cuba",
+        "how": "viens",
+        "notes": "Darba brauciens uz Kubu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.444861,
+          23.105606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Jose",
+        "country": " Costa Rica",
+        "how": "viens",
+        "notes": " \"Darba brauciens uz Kostariku. Vulkāns"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.077646,
+          9.942866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santiago",
+        "country": " Chile",
+        "how": "viens",
+        "notes": " \"Darba brauciens uz Santiago. Moderna un skaista pilsēta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -70.60284,
+          -33.41319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dhaka",
+        "country": " Bangladesh",
+        "how": " viens",
+        "notes": "Darba brauciens uz Bangladešu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          90.412301,
+          23.790523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kuala Lumpur",
+        "country": " Malaysia",
+        "how": " viens",
+        "notes": "Darba brauciens uz Malaiziju"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.686653,
+          3.135639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abu Dhabi",
+        "country": " UAE",
+        "how": " viens",
+        "notes": "Darba braucienā"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.371561,
+          24.500317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guilin",
+        "country": " China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.179954,
+          25.234479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chengyang",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          109.641504,
+          25.897111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zhangjiajie",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.479191,
+          29.117096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wulingyuan",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          110.550434,
+          29.34573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Guiyang",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.630154,
+          26.647661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kunming",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          102.832892,
+          24.880095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dali",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.160637,
+          25.690332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lijiang",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.227751,
+          26.855047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chengdu",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.066801,
+          30.572816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madrid",
+        "country": "Spain",
+        "how": "viens",
+        "notes": "Darbs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7495759,
+          40.4379332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dubai",
+        "country": "UAE",
+        "how": "viens",
+        "notes": "Darbs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          55.324199,
+          25.219543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nikko",
+        "country": "Japan",
+        "how": "tris",
+        "notes": "Ceļojums trijatā pa Japānu ar vilcieniem 2013. gada aprīlī. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.681273,
+          36.742236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chongqing",
+        "country": "China",
+        "how": "tris",
+        "notes": "Ceļojums trijatā uz Ķīnu, 2016. Apraksts <a href='http://pasaule.dodies.lv'>atrodams blogā</a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.551556,
+          29.56301
+        ]
+      }
+    }
+  ]
+}
