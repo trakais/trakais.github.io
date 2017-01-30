@@ -2040,13 +2040,32 @@
         "marker-size": "medium",
         "name": "Zemie Tatri",
         "how": "divi",
-        "notes": "Auto ceļojums pa rietumeiropu 2007. gadā"
+        "notes": "Auto ceļojums pa rietumeiropu 2007. gadā",
+        "country": "Slovakia"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           19.557037353515625,
           48.93873912193207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7E7E7E",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "Čehija",
+        "how": "divi",
+        "notes": "Auto ceļojums pa rietumeiropu 2007. gadā"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.608139038085938,
+          50.727002286552334
         ]
       }
     }
