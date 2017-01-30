@@ -2059,7 +2059,8 @@
         "marker-symbol": "",
         "name": "Čehija",
         "how": "divi",
-        "notes": "Auto ceļojums pa rietumeiropu 2007. gadā"
+        "notes": "Auto ceļojums pa rietumeiropu 2007. gadā",
+        "country": "Czech Republic"
       },
       "geometry": {
         "type": "Point",
