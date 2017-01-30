@@ -2032,6 +2032,23 @@
           29.56301
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7E7E7E",
+        "marker-size": "medium",
+        "name": "Zemie Tatri",
+        "how": "divi",
+        "notes": "Auto ceļojums pa rietumeiropu 2007. gadā"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.557037353515625,
+          48.93873912193207
+        ]
+      }
     }
   ]
 }
